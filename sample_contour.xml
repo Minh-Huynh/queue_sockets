@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="1.2.5 2022-04-08" category="live" instance="eqinfo2gm-contour@eew-ci-prod1" message_type="new" orig_sys="eqinfo2gm" ref_id="0" ref_src="" timestamp="2022-12-20T10:34:32.549Z" version="0">
+
+  <core_info id="1671532470">
+    <mag units="Mw">5.6337</mag>
+    <mag_uncer units="Mw">0.3982</mag_uncer>
+    <lat units="deg">40.4929</lat>
+    <lat_uncer units="deg">0.1283</lat_uncer>
+    <lon units="deg">-124.2906</lon>
+    <lon_uncer units="deg">0.1283</lon_uncer>
+    <depth units="km">8.0000</depth>
+    <depth_uncer units="km">5.0000</depth_uncer>
+    <orig_time units="UTC">2022-12-20T10:34:26.937Z</orig_time>
+    <orig_time_uncer units="sec">2.5177</orig_time_uncer>
+    <likelihood>0.9091</likelihood>
+    <num_stations>4</num_stations>
+  </core_info>
+
+  <contributors>
+    <contributor alg_instance="epic@eew-ci-prod2" alg_name="epic" alg_version="3.3.4-2021-10-15" category="live" event_id="70617" version="0"/>
+    <contributor alg_instance="sa@eew-ci-prod1.gps.caltech.edu" alg_name="sa" alg_version="2.6.4 2022-07-18" category="live" event_id="1671532470" version="0"/>
+  </contributors>
+
+  <gm_info>
+    <gmpoint_obs>
+      <pgv_obs number="1">
+        <obs assoc="true" orig_sys="epic">
+          <SNCL>KCT.NC.HHZ.--</SNCL>
+          <value units="cm/s">0.5739</value>
+          <lat units="deg">40.4756</lat>
+          <lon units="deg">-124.3375</lon>
+          <time units="UTC">2022-12-20T10:34:01.603Z</time>
+        </obs>
+      </pgv_obs>
+      <pga_obs number="4">
+        <obs assoc="true" orig_sys="epic">
+          <SNCL>1023.NP.HNZ.10</SNCL>
+          <value units="cm/s/s">31.1900</value>
+          <lat units="deg">40.5762</lat>
+          <lon units="deg">-124.2637</lon>
+          <time units="UTC">2022-12-20T10:34:02.180Z</time>
+        </obs>
+        <obs assoc="true" orig_sys="epic">
+          <SNCL>PETL.BK.HNZ.00</SNCL>
+          <value units="cm/s/s">21.0527</value>
+          <lat units="deg">40.2884</lat>
+          <lon units="deg">-124.3426</lon>
+          <time units="UTC">2022-12-20T10:34:03.920Z</time>
+        </obs>
+        <obs assoc="true" orig_sys="epic">
+          <SNCL>KCT.NC.HNZ.--</SNCL>
+          <value units="cm/s/s">11.9203</value>
+          <lat units="deg">40.4756</lat>
+          <lon units="deg">-124.3375</lon>
+          <time units="UTC">2022-12-20T10:34:01.603Z</time>
+        </obs>
+        <obs assoc="true" orig_sys="epic">
+          <SNCL>KCO.NC.HNZ.--</SNCL>
+          <value units="cm/s/s">5.0337</value>
+          <lat units="deg">40.2567</lat>
+          <lon units="deg">-124.2660</lon>
+          <time units="UTC">2022-12-20T10:34:04.743Z</time>
+        </obs>
+      </pga_obs>
+    </gmpoint_obs>
+    <gmcontour_pred number="6">
+      <contour>
+        <MMI units="">2</MMI>
+        <PGA units="cm/s/s">0.7926</PGA>
+        <PGV units="cm/s">0.0365</PGV>
+        <polygon number="8">41.3922,-124.2906 41.1257,-123.4464 40.4869,-123.1081 39.8540,-123.4623 39.5936,-124.2906 39.8540,-125.1189 40.4869,-125.4731 41.1257,-125.1348 41.3922,-124.2906</polygon>
+      </contour>
+      <contour>
+        <MMI units="">3</MMI>
+        <PGA units="cm/s/s">2.9142</PGA>
+        <PGV units="cm/s">0.1347</PGV>
+        <polygon number="8">41.3922,-124.2906 41.1257,-123.4464 40.4869,-123.1081 39.8540,-123.4623 39.5936,-124.2906 39.8540,-125.1189 40.4869,-125.4731 41.1257,-125.1348 41.3922,-124.2906</polygon>
+      </contour>
+      <contour>
+        <MMI units="">4</MMI>
+        <PGA units="cm/s/s">12.8729</PGA>
+        <PGV units="cm/s">0.6449</PGV>
+        <polygon number="8">41.3922,-124.2906 41.1257,-123.4464 40.4869,-123.1081 39.8540,-123.4623 39.5936,-124.2906 39.8540,-125.1189 40.4869,-125.4731 41.1257,-125.1348 41.3922,-124.2906</polygon>
+      </contour>
+      <contour>
+        <MMI units="">5</MMI>
+        <PGA units="cm/s/s">44.5296</PGA>
+        <PGV units="cm/s">3.0888</PGV>
+        <polygon number="8">40.7434,-124.2906 40.6698,-124.0571 40.4924,-123.9612 40.3156,-124.0583 40.2424,-124.2906 40.3156,-124.5229 40.4924,-124.6200 40.6698,-124.5241 40.7434,-124.2906</polygon>
+      </contour>
+      <contour>
+        <MMI units="">6</MMI>
+        <PGA units="cm/s/s">82.9696</PGA>
+        <PGV units="cm/s">6.6981</PGV>
+        <polygon number="8">40.6007,-124.2906 40.5691,-124.1903 40.4928,-124.1489 40.4166,-124.1905 40.3851,-124.2906 40.4166,-124.3907 40.4928,-124.4323 40.5691,-124.3909 40.6007,-124.2906</polygon>
+      </contour>
+      <contour>
+        <MMI units="">7</MMI>
+        <PGA units="cm/s/s">154.5930</PGA>
+        <PGV units="cm/s">13.8805</PGV>
+        <polygon number="8">40.5293,-124.2906 40.5187,-124.2567 40.4929,-124.2427 40.4671,-124.2567 40.4565,-124.2906 40.4671,-124.3245 40.4929,-124.3385 40.5187,-124.3245 40.5293,-124.2906</polygon>
+      </contour>
+    </gmcontour_pred>
+  </gm_info>
+
+</event_message>
+
