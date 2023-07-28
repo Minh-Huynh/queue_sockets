@@ -1,7 +1,7 @@
 CREATE TABLE subscription (
   server varchar(64) NOT NULL,
   topic varchar(64) NOT NULL,
-  online boolean DEFAULT false
+  online boolean DEFAULT 0 
 );
 
 CREATE TABLE user (
