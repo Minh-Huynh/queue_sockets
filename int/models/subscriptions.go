@@ -2,6 +2,7 @@ package models
 
 import (
 	"database/sql"
+	"log"
 )
 
 type SubscriptionModel struct {
@@ -19,13 +20,17 @@ func (s *SubscriptionModel) Insert(server, topic string) (int, error) {
 	statement := `INSERT INTO subscriptions (server, topic) SELECT ?, ? WHERE NOT EXISTS
 	(SELECT server, topic FROM subscriptions WHERE server=? AND topic=?);`
 
-	result, err := s.DB.Exec(statement, server, topic, server, topic)
+	_, err := s.DB.Exec(statement, server, topic, server, topic)
 	if err != nil {
+		log.Printf("ERROR: %s", err)
 		return 0, err
 	}
 
-	id, err := result.LastInsertId()
-	if err != nil {
+	getIdStatement := `SELECT rowId from subscriptions WHERE server=? AND topic=?`
+
+	var id int
+	row := s.DB.QueryRow(getIdStatement, server, topic)
+	if err := row.Scan(&id); err != nil {
 		return 0, err
 	}
 
