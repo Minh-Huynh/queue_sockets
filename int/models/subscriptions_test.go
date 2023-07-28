@@ -13,7 +13,7 @@ func TestInsertSubscription(t *testing.T) {
 
 	testCases := []testCase{
 		{server: "localhost:1883", topic: "test/topic", want: 1, err: false},
-		{server: "localhost:1883", topic: "test/topic", want: 0, err: true},
+		{server: "localhost:1883", topic: "test/topic", want: 1, err: false},
 		{server: "localhost:1884", topic: "test/topic", want: 2, err: false},
 	}
 

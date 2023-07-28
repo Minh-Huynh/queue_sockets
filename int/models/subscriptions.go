@@ -16,9 +16,10 @@ type Subscription struct {
 }
 
 func (s *SubscriptionModel) Insert(server, topic string) (int, error) {
-	statement := `INSERT INTO subscriptions (server, topic) VALUES(?, ?);`
+	statement := `INSERT INTO subscriptions (server, topic) SELECT ?, ? WHERE NOT EXISTS
+	(SELECT server, topic FROM subscriptions WHERE server=? AND topic=?);`
 
-	result, err := s.DB.Exec(statement, server, topic)
+	result, err := s.DB.Exec(statement, server, topic, server, topic)
 	if err != nil {
 		return 0, err
 	}
